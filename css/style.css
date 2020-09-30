@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+
+}
+.container [class*="col-"]{
+    border: 1px solid black;
+    background-color: pink;
+}
+.container:last-child > [class*="col-"]:not(.inception){
+  background-color: #e4605e;
+  border: 1px solid white;
+}
+.container:last-child > .inception{
+  padding: 5px;
+}
